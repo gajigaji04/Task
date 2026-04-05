@@ -31,7 +31,13 @@ exports.login = async ({ email, password }) => {
     expiresIn: "1h",
   });
 
-  return { user, token };
+  const userData = {
+    _id: user._id,
+    email: user.email,
+    name: user.name,
+  };
+
+  return { user: userData, token };
 };
 
 // 회원탈퇴

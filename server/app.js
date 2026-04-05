@@ -19,7 +19,7 @@ app.get("/api/hello", (req, res) => {
   res.json({ message: "서버 연결 확인" });
 });
 
-// routes 연결
+// auth route
 app.use("/api/auth", require("./routes/authRoutes"));
 
 app.listen(port, () => {
