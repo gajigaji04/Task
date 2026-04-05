@@ -1,0 +1,68 @@
+# =========================
+# Node / Backend
+# =========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# logs
+logs/
+*.log
+
+# environment variables
+.env
+.env.*
+!.env.example
+
+# build output
+dist/
+build/
+
+# cache
+.cache/
+.tmp/
+
+# =========================
+# React / Frontend
+# =========================
+node_modules/
+build/
+dist/
+
+# vite
+.vite/
+
+# next (혹시 나중 대비)
+.next/
+
+# =========================
+# OS / Editor
+# =========================
+.DS_Store
+Thumbs.db
+
+# VSCode
+.vscode/
+!.vscode/settings.json
+
+# IntelliJ / WebStorm
+.idea/
+
+# =========================
+# 테스트 / 커버리지
+# =========================
+coverage/
+
+# =========================
+# MongoDB / DB
+# =========================
+*.db
+*.sqlite
+
+# =========================
+# 기타
+# =========================
+*.local
+*.pem
